@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,26 +16,26 @@ body {
 }
 
 a {
-  color:white;
+  color: white;
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  background:rgba(0,0,0,0.2);
-  padding:20px 5px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
   display: inline-block;
   width: 100%;
   text-align: center;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 
 a:hover {
-  background:rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding:50px;
+  padding: 50px;
 }
 
 
@@ -43,39 +45,21 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border:1px solid black;
+  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
-background-color: white;
+  background-color: white;
 }
 
-.flex-nav li {
-  border: 1px dotted red
+
+
+.flex-nav,
+a {
+  flex-flow: column;
+  background-color: #c16ecf;
 
 }
-
-.flex-nav ul {
-  border: 2px dashed green;
-
-}
-
-.flex-nav, a {
-  border: 2px solid blue;
-
-
-}
-
-.social {
-  background-color: #2376ae;
-
-}
-
-.social a {
-  background-color: #2376ae;
-
-}
-
 
 
 
@@ -84,23 +68,57 @@ background-color: white;
 
   .flex-nav li {
     display: flex;
- 
+
 
     width: 40%;
     height: 60px;
   }
 
-
-
   
-
+  .social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+    width: 25%;
+    margin: auto;
+  }
+  
+  
 }
 
 @media all and (max-width:500px) {
- 
-  .flex-nav ul {
-    width: 25%;
+
+  .social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+    width: 55%;
+    margin: auto;
   }
+  
+
+  .flex-nav li {
+    display: flex;
+    flex-flow: row;
+    width: 40%;
+    height: 100px;
+    border: 1px solid blue;
+  }
+
+
+  .flex-nav  {
+    
+    width: 100%;
+    border: 4px dotted red;
+  }
+
+  .social:nth-child(7), .social:nth-child(9), .social:nth-child(8), .social:last-child {
+    width: 85px;
+    border: 1px dashed black;
+  }
+
 
 
 
