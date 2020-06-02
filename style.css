@@ -1,110 +1,61 @@
 /* Some CSS Setup - nothing to do with flexbox */
 html {
-  min-width: 202px;
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  min-width: 202px;
   font-family: sans-serif;
   margin: 0;
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
 a {
-  color: white;
+  color:white;
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  padding: 20px 5px;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
   display: inline-block;
   width: 100%;
   text-align: center;
-  transition: all 0.5s;
+  transition:all 0.5s;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background:rgba(0,0,0,0.3);
 }
 
 .wrapper {
-  display: inline-flex;
-  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:50px;
 }
 
-
-/*----------------------------------------------------------------------*/
-
+/* Flex Container */
 .flex-nav ul {
-  min-width: 202px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 350px;
-  border: 1px solid black;
+  border:1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.flex-nav {
-  margin-left: 400px;
-  min-width: 202px;
-  max-width: 202px;
-  background: rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-wrap: wrap;
-  width: 73%;
-}
-
-.social {
-  width: 49px;
-  height: 50px;
-  margin-top: 38px;
-}
-
-.social a {
-  padding: 10px;
-  min-width: 49px;
-  max-width: 49px;
-  height: 50px;
-
-}
-
-li:first-child a,
-li:nth-child(3) a,
-li:nth-child(5) a {
-
-  margin: 6px;
-  padding: 0;
-  margin-top: 56px;
   
-
 }
 
 
-li:nth-child(4) a,
-li:nth-child(2) a,
-li:nth-child(6) a {
-  margin: 6px;
-  padding: 0;
-  margin-top: 15px;
 
-}
+
 
 
 
 @media all and (max-width:1000px) {
   
+
 .flex-nav ul {
-  min-width: 202px;
+  min-width: 592px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -118,8 +69,8 @@ li:nth-child(6) a {
 
 .flex-nav {
   margin-left: auto;
-  min-width: 202px;
-  max-width: 202px;
+  min-width: 595px;
+  max-width: 595px;
   background: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
@@ -127,27 +78,31 @@ li:nth-child(6) a {
 }
 
 .social {
-  width: 49px;
-  height: 50px;
-  margin-top: 38px;
+  width: 60px;
+  height: 30px;
+  margin-top: 150px;
+  margin-left: 80px; 
+  border: 3px dotted blue;
+  
 }
 
 .social a {
+  display: inline;
   padding: 10px;
   min-width: 49px;
   max-width: 49px;
-  height: 50px;
+  border: 2px solid red;
 
 }
 
 li:first-child a,
 li:nth-child(3) a,
 li:nth-child(5) a {
-
-  margin: 6px;
   padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 56px;
-  
+  border: 1px solid red;
 
 }
 
@@ -155,13 +110,24 @@ li:nth-child(5) a {
 li:nth-child(4) a,
 li:nth-child(2) a,
 li:nth-child(6) a {
-  margin: 6px;
+ 
   padding: 0;
-  margin-top: 15px;
+  margin-top: 55px;
+  margin-left: 5px;
+  border: 1px solid red;
+
+
+}
+
+.fa.fa-twitter, .fa.fa-facebook
+, .fa.fa-github
+, .fa.fa-instagram {
+    border: 1px solid red;
 
 }
 
 }
+
 
 @media all and (max-width:500px) {
   
