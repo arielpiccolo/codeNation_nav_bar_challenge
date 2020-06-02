@@ -1,6 +1,6 @@
 /* Some CSS Setup - nothing to do with flexbox */
 html {
-  min-width: 202px;  
+  min-width: 202px;
   box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  min-width: 202px;  
+  min-width: 202px;
   font-family: sans-serif;
   margin: 0;
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -34,15 +34,13 @@ a:hover {
 }
 
 .wrapper {
-  min-width: 202px;  
-  max-width: 1000px;
-  margin: 0 auto;
+  display: inline-flex;
   padding: 50px;
 }
 
 
 .flex-nav ul {
-  min-width: 202px;  
+  min-width: 202px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -55,19 +53,45 @@ a:hover {
 }
 
 .flex-nav {
-    min-width: 202px;   
-    max-width: 202px;
-    background:rgba(0,0,0,0.2);
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid red;
-    width: 73%;
+  min-width: 202px;
+  max-width: 202px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  width: 73%;
 }
 
 .social {
-   
-    border: 1px solid blue;
-    width: 49px;
-    height: 50px;
-    margin-top: 100px;
+  width: 49px;
+  height: 50px;
+  margin-top: 38px;
+}
+
+.social a {
+  padding: 10px;
+  min-width: 49px;
+  max-width: 49px;
+  height: 50px;
+
+}
+
+li:first-child a,
+li:nth-child(3) a,
+li:nth-child(5) a {
+
+  margin: 6px;
+  padding: 0;
+  margin-top: 56px;
+  
+
+}
+
+
+li:nth-child(4) a,
+li:nth-child(2) a,
+li:nth-child(6) a {
+  margin: 6px;
+  padding: 0;
+  margin-top: 15px;
+
 }
